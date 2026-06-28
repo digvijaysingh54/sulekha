@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sulekha's beautiful memories from her Rishikesh trip - sacred rivers, iconic bridges, and soulful moments.">
+  <title>Rishikesh Memories - Sulekha Singh</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .travel-story {
+      background: linear-gradient(135deg, rgba(168, 213, 247, 0.15), rgba(240, 217, 232, 0.15));
+      padding: 3rem;
+      border-radius: 15px;
+      border-left: 4px solid var(--dark-blue);
+      margin: 2rem auto;
+      max-width: 900px;
+      font-size: 1.15rem;
+      line-height: 1.9;
+    }
+
+    .travel-story p {
+      color: var(--text-dark);
+      margin-bottom: 1.5rem;
+    }
+
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+
+    .photo-card {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      height: 350px;
+      transition: all 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(44, 90, 160, 0.85));
+      padding: 2rem 1.5rem 1.2rem;
+      color: var(--white);
+    }
+
+    .photo-caption h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+      color: var(--white);
+    }
+
+    .photo-caption p {
+      font-size: 0.9rem;
+      margin: 0;
+      opacity: 0.9;
+      color: var(--white);
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-pink));
+      padding: 2.5rem;
+      border-radius: 15px;
+      text-align: center;
+      margin: 3rem auto;
+      max-width: 800px;
+    }
+
+    .highlight-box h3 {
+      color: var(--dark-blue);
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    .highlight-box p {
+      font-size: 1.1rem;
+      color: var(--text-dark);
+    }
+
+    .rishikesh-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+
+    .fact-card {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background: var(--white);
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .fact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .fact-card .fact-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .fact-card h4 {
+      color: var(--dark-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .fact-card p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .photo-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .travel-story {
+        padding: 2rem 1.5rem;
+      }
+
+      .rishikesh-facts {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .rishikesh-facts {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">✨ Sulekha</a>
+      <button class="mobile-toggle">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="rishikesh.html">Travels</a></li>
+        <li><a href="tribute.html">Tribute</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="height: 60vh; margin-top: 60px; background: linear-gradient(135deg, rgba(168, 213, 247, 0.3), rgba(240, 217, 232, 0.2));">
+    <div class="hero-content">
+      <h1>🏔️ Rishikesh Memories</h1>
+      <p class="hero-tagline">Where the Ganges Whispered Peace to Her Soul</p>
+    </div>
+  </section>
+
+  <!-- The Story Section -->
+  <section>
+    <div class="section-header">
+      <h2>The Story Behind This Trip</h2>
+      <p>How friends turned a reluctant traveler into a happy explorer</p>
+    </div>
+
+    <div class="travel-story">
+      <p>
+        It was the peak of summer, and the heat was unbearable. Sulekha was exhausted — the scorching sun had drained all her energy, and she kept wondering, <em>"Why did I even come here?"</em> She was not ready to step outside at all. The idea of exploring in that heat felt impossible.
+      </p>
+      <p>
+        But then, her amazing friends stepped in. They convinced her, encouraged her, and pulled her out of her comfort zone. <strong>"Come on Sulekha, you'll regret it if you don't see these places!"</strong> they said. And they were absolutely right.
+      </p>
+      <p>
+        Once she stepped out and felt the cool breeze near the Ganges, everything changed. The sacred river, the iconic Lakshman Jhula and Ram Jhula, the peaceful evenings by the water — every moment became a memory she would treasure forever. What started as reluctance turned into one of the most beautiful trips of her life. 🌊✨
+      </p>
+    </div>
+  </section>
+
+  <!-- Rishikesh Highlights -->
+  <section>
+    <div class="section-header">
+      <h2>Why Rishikesh is Special</h2>
+      <p>The Yoga Capital of the World has a magic that touches every soul</p>
+    </div>
+
+    <div class="rishikesh-facts">
+      <div class="fact-card">
+        <div class="fact-icon">🙏</div>
+        <h4>Spiritual Haven</h4>
+        <p>Sacred land where the Ganges flows pure and ancient temples bless every visitor</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">🌊</div>
+        <h4>River Ganga</h4>
+        <p>Crystal clear waters that wash away all worries and fill your heart with peace</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">🌉</div>
+        <h4>Iconic Bridges</h4>
+        <p>Lakshman Jhula & Ram Jhula — legendary suspension bridges with stunning views</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">⛰️</div>
+        <h4>Mountain Beauty</h4>
+        <p>Nestled in the foothills of the Himalayas with breathtaking natural scenery</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">🌅</div>
+        <h4>Ganga Aarti</h4>
+        <p>Mesmerizing evening prayer ceremonies by the river with lights and chants</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">🧘</div>
+        <h4>Peace & Yoga</h4>
+        <p>A place to reconnect with yourself, find inner calm, and breathe freely</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section>
+    <div class="section-header">
+      <h2>📸 Her Beautiful Moments</h2>
+      <p>Captured memories from Sulekha's Rishikesh adventure</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-lakshman-jhoola.jpeg" alt="Sulekha at Lakshman Jhula">
+        <div class="photo-caption">
+          <h4>Lakshman Jhula</h4>
+          <p>Standing at the iconic suspension bridge over the Ganges</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-ram-jhoola.jpeg" alt="Sulekha at Ram Jhula">
+        <div class="photo-caption">
+          <h4>Ram Jhula</h4>
+          <p>Another legendary bridge, another beautiful memory</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-killer-smile.jpeg" alt="Sulekha's killer smile in Rishikesh">
+        <div class="photo-caption">
+          <h4>That Killer Smile ✨</h4>
+          <p>When Rishikesh brings out the happiest version of you</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-in-river-beautiful-sunlight.jpeg" alt="Sulekha in river with beautiful sunlight">
+        <div class="photo-caption">
+          <h4>Golden Hour by the River</h4>
+          <p>Beautiful sunlight dancing on the sacred waters</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-in-river-beautiful-sunlight-with-shed.jpeg" alt="Sulekha enjoying sunlight with shade">
+        <div class="photo-caption">
+          <h4>Sunlight & Shade</h4>
+          <p>Perfect balance of warmth and cool by the Ganga</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-in-river-bath.jpeg" alt="Sulekha enjoying river bath">
+        <div class="photo-caption">
+          <h4>Sacred Dip in the Ganges</h4>
+          <p>A holy river bath that refreshes body and soul</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-in-river-masti.jpeg" alt="Sulekha having fun in river">
+        <div class="photo-caption">
+          <h4>River Masti! 💦</h4>
+          <p>Pure joy and fun splashing in the cool Ganga waters</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-in-river-masti2.jpeg" alt="Sulekha river fun continued">
+        <div class="photo-caption">
+          <h4>More River Fun</h4>
+          <p>When you're having too much fun to stop!</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-in-river-stting-masti.jpeg" alt="Sulekha sitting by the river">
+        <div class="photo-caption">
+          <h4>Peaceful Moments</h4>
+          <p>Sitting by the river, soaking in all the beauty</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-in-river-sitting-masti2.jpeg" alt="Sulekha relaxing by the river">
+        <div class="photo-caption">
+          <h4>River Side Chill</h4>
+          <p>Finding her happy place by the flowing waters</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-extra-groove.jpeg" alt="Sulekha grooving in Rishikesh">
+        <div class="photo-caption">
+          <h4>Extra Groove Mode 💃</h4>
+          <p>When the vibe is right and you just have to pose!</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-my-photo-with-groom.jpeg" alt="Sulekha photo with friends">
+        <div class="photo-caption">
+          <h4>Special Moment</h4>
+          <p>Making memories with wonderful people</p>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <img src="rishikesh-memory/Rishikesh-night-time-river-slow.jpeg" alt="Night time river view in Rishikesh">
+        <div class="photo-caption">
+          <h4>Magical Night 🌙</h4>
+          <p>The river glowing softly under the night sky</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Thought -->
+  <section>
+    <div class="highlight-box">
+      <h3>✨ From Reluctance to Pure Joy</h3>
+      <p>
+        What started with "Why did I come here?" ended with "I never want to leave!" 
+        Sometimes the best memories come from the trips we almost didn't take. 
+        Thank you, friends, for pushing Sulekha to discover this magical place. 💙
+      </p>
+    </div>
+
+    <div class="quote-section" style="max-width: 800px; margin: 3rem auto;">
+      <p class="quote-text">"The river taught me to listen. You can learn a lot from it. It's already got everything it needs."</p>
+      <p class="quote-author">— Inspired by Rishikesh vibes</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="footer-quote">"Life is either a daring adventure or nothing at all." ✨</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="career.html">Career</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="family.html">Family</a>
+      <a href="rishikesh.html">Travels</a>
+      <a href="tribute.html">Tribute</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-credit">Made with ❤️ for Sulekha Singh | A Celebration of Her Beautiful Journey</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
