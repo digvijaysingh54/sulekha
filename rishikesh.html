@@ -290,6 +290,11 @@
       letter-spacing: 1rem;
     }
 
+    .video-brighten video {
+      filter: brightness(1.5) contrast(1.15);
+      object-position: center 30%;
+    }
+
     @media (max-width: 768px) {
       .video-showcase,
       .video-showcase:nth-child(even) {
@@ -453,7 +458,7 @@
 
       <!-- Video 2: Night River Play -->
       <div class="video-showcase">
-        <div class="video-frame" onmouseenter="this.querySelector('video').play()" onmouseleave="this.querySelector('video').pause(); this.querySelector('video').currentTime = 0;">
+        <div class="video-frame video-brighten" onmouseenter="this.querySelector('video').play()" onmouseleave="this.querySelector('video').pause(); this.querySelector('video').currentTime = 0;">
           <video src="rishikesh-videos/night-time-in-river-playing-with-water.mp4" muted loop playsinline preload="metadata"></video>
           <div class="video-frame-overlay">
             <div class="video-play-btn">▶</div>
